@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { FaArrowCircleUp } from 'react-icons/fa';
 import { FaHouse, FaVoicemail, FaArrowPointer, FaPhone } from "react-icons/fa6";
 import {MdEmail } from 'react-icons/md'
 
@@ -20,17 +21,16 @@ function Footer() {
         <div className="text-white space-y-2">
           <div>
             <h1 className="text-[20px] font-bold mb-8">Contact Us</h1>
-            <div className="flex items-center gap-2 mb-3">
-              <FaPhone />
-              <p>+1 (608) 618-2830</p>
-            </div>
 
             <div className="flex items-center gap-2">
-              <FaHouse />
-              <p>Downtown, Salt Lake City, UT, United States</p>
+              <FaHouse className='md:text-[15px] text-[40px]'/>
+              <p>
+                B64WF, 4625 W. Lake Park Blvd. Salt Lake City, Utah 84120 United
+                States
+              </p>
             </div>
           </div>
-          <div className='flex items-center gap-2'>
+          <div className="flex items-center gap-2">
             <MdEmail />
             <div className="flex flex-col">
               <Link href="">info@b64wf.com</Link>
@@ -39,17 +39,15 @@ function Footer() {
         </div>
 
         <div className="text-white">
-          <h1 className="text-[20px] font-bold mb-8">Search</h1>
-          <input type="text" className="p-4" />
           <a
             href="#home"
             className="text-[20px] items-center cursor-pointer md:flex hidden mt-10"
           >
-            Back to the top <FaArrowPointer />
+            Back to the top <FaArrowCircleUp className='ml-2'/>
           </a>
         </div>
       </div>
-      <div className="text-center text-white">
+      <div className="text-center text-white pb-5">
         <h1 className="text-[15px]">COPYRIGHT @ 2024 B64FW</h1>
       </div>
     </section>
